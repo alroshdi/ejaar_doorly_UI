@@ -1,0 +1,127 @@
+.kpi-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.kpi-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.kpi-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.kpi-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kpi-card-blue .kpi-icon-wrapper {
+  background-color: #dbeafe;
+  color: var(--primary-blue);
+}
+
+.kpi-card-green .kpi-icon-wrapper {
+  background-color: #d1fae5;
+  color: var(--success);
+}
+
+.kpi-card-success .kpi-icon-wrapper {
+  background-color: #d1fae5;
+  color: var(--success);
+}
+
+.kpi-card-warning .kpi-icon-wrapper {
+  background-color: #fef3c7;
+  color: var(--warning);
+}
+
+.kpi-card-danger .kpi-icon-wrapper {
+  background-color: #fee2e2;
+  color: var(--danger);
+}
+
+.kpi-card-info .kpi-icon-wrapper {
+  background-color: #dbeafe;
+  color: var(--info);
+}
+
+.kpi-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.kpi-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.kpi-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.kpi-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.kpi-item:last-child {
+  border-bottom: none;
+}
+
+.kpi-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.kpi-value {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.kpi-single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md) 0;
+}
+
+.kpi-large-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: var(--spacing-xs);
+}
+
+.kpi-unit {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+
+
+
+
+
