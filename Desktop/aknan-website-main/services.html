@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="خدمات شركة أكنان لتعقيب المعاملات - معالجة المستندات الحكومية، خدمات البلدية، الشرطة السلطانية، التأشيرات والمزيد.">
+    <meta name="keywords" content="خدمات, معالجة مستندات, بلدية, شرطة, تأشيرات, تراخيص">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aknan.com/services.html">
+    <meta property="og:title" content="خدماتنا - شركة أكنان لتعقيب المعاملات">
+    <meta property="og:description" content="نقدم مجموعة شاملة من خدمات معالجة المستندات الحكومية">
+    
+    <title>خدماتنا - شركة أكنان لتعقيب المعاملات</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo" data-translate="navHome">شركة أكنان</div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-translate="navHome">الرئيسية</a></li>
+                <li><a href="about.html" data-translate="navAbout">من نحن</a></li>
+                <li><a href="services.html" data-translate="navServices">خدماتنا</a></li>
+                <li><a href="team.html" data-translate="navTeam">فريق العمل</a></li>
+                <li><a href="contact.html" data-translate="navContact">اتصل بنا</a></li>
+                <li><button class="lang-toggle" onclick="toggleLanguage()">EN</button></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Services Hero -->
+    <section class="hero" style="padding: 6rem 2rem 4rem;">
+        <div class="hero-content">
+            <h1 data-translate="navServices">خدماتنا</h1>
+            <p>نقدم مجموعة شاملة من خدمات معالجة المستندات الحكومية في سلطنة عمان</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section services-highlight">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">📋</div>
+                    <h3 data-translate="service1">معالجة المستندات الحكومية</h3>
+                    <p>
+                        نقدم خدمات شاملة لمعالجة جميع أنواع المستندات الحكومية بسرعة وكفاءة. 
+                        نحن نتعامل مع جميع الجهات الحكومية لضمان إتمام معاملاتك بنجاح.
+                    </p>
+                    <button class="btn-service" onclick="handleServiceRequest('معالجة المستندات الحكومية')" data-translate="btnRequestService">طلب الخدمة</button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">🏛️</div>
+                    <h3 data-translate="service2">خدمات البلدية</h3>
+                    <p>
+                        نقوم بجميع معاملات البلدية من تراخيص البناء، الموافقات، الإصدارات، 
+                        والتجديدات. نضمن لك إتمام جميع المعاملات البلدية بسهولة وسرعة.
+                    </p>
+                    <button class="btn-service" onclick="handleServiceRequest('خدمات البلدية')" data-translate="btnRequestService">طلب الخدمة</button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">🚔</div>
+                    <h3 data-translate="service3">خدمات الشرطة السلطانية</h3>
+                    <p>
+                        نعالج جميع معاملات الشرطة السلطانية العمانية باحترافية عالية. 
+                        من تجديدات الرخص إلى شهادات السجل العدلي وغيرها من الخدمات.
+                    </p>
+                    <button class="btn-service" onclick="handleServiceRequest('خدمات الشرطة السلطانية')" data-translate="btnRequestService">طلب الخدمة</button>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">✈️</div>
+                    <h3 data-translate="service4">خدمات التأشيرات</h3>
+                    <p>
+                        نساعدك في الحصول على التأشيرات بجميع أنواعها بسهولة. 
+                        نتعامل مع جميع الإجراءات المطلوبة للحصول على التأشيرات بسرعة.
+                    </p>
+                    <button class="btn-service" onclick="handleServiceRequest('خدمات التأشيرات')" data-translate="btnRequestService">طلب الخدمة</button>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">📄</div>
+                    <h3 data-translate="service5">تجديد السجل التجاري</h3>
+                    <p>
+                        نقدم خدمات تجديد السجل التجاري بسرعة وسهولة. 
+                        نضمن لك إتمام جميع الإجراءات المطلوبة في الوقت المحدد.
+                    </p>
+                    <button class="btn-service" onclick="handleServiceRequest('تجديد السجل التجاري')" data-translate="btnRequestService">طلب الخدمة</button>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">✅</div>
+                    <h3 data-translate="service6">الموافقات والتراخيص</h3>
+                    <p>
+                        نساعدك في الحصول على جميع أنواع الموافقات والتراخيص المطلوبة. 
+                        من التراخيص التجارية إلى تراخيص البناء والمزيد.
+                    </p>
+                    <button class="btn-service" onclick="handleServiceRequest('الموافقات والتراخيص')" data-translate="btnRequestService">طلب الخدمة</button>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">💻</div>
+                    <h3 data-translate="service7">تقديم النماذج الإلكترونية</h3>
+                    <p>
+                        نقدم خدمات تقديم النماذج الإلكترونية لجميع الجهات الحكومية. 
+                        نضمن ملء النماذج بشكل صحيح وإرسالها في الوقت المحدد.
+                    </p>
+                    <button class="btn-service" onclick="handleServiceRequest('تقديم النماذج الإلكترونية')" data-translate="btnRequestService">طلب الخدمة</button>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">📁</div>
+                    <h3 data-translate="service8">إدارة المستندات</h3>
+                    <p>
+                        نقدم خدمات إدارة شاملة للمستندات. من التنظيم والتخزين إلى 
+                        المتابعة والتحديث، نحن هنا لمساعدتك في إدارة جميع مستنداتك.
+                    </p>
+                    <button class="btn-service" onclick="handleServiceRequest('إدارة المستندات')" data-translate="btnRequestService">طلب الخدمة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--dark-green); color: var(--white); text-align: center;">
+        <div class="container">
+            <h2 style="color: var(--white); margin-bottom: 1rem;">هل تحتاج إلى مساعدة في معاملاتك؟</h2>
+            <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem; font-size: 1.1rem;">
+                تواصل معنا اليوم واحصل على استشارة مجانية حول خدماتنا
+            </p>
+            <a href="contact.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.2rem 2.5rem;">تواصل معنا الآن</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-translate="footerAbout">من نحن</h3>
+                <p>شركة أكنان لتعقيب المعاملات - متخصصون في معالجة المستندات الحكومية وتسهيل الخدمات في سلطنة عمان.</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-translate="footerServices">خدماتنا</h3>
+                <a href="services.html" data-translate="service1">معالجة المستندات الحكومية</a>
+                <a href="services.html" data-translate="service2">خدمات البلدية</a>
+                <a href="services.html" data-translate="service3">خدمات الشرطة السلطانية</a>
+                <a href="services.html" data-translate="service4">خدمات التأشيرات</a>
+            </div>
+            <div class="footer-section">
+                <h3 data-translate="footerContact">اتصل بنا</h3>
+                <p>📧 info@aknan.com</p>
+                <p>📞 +968 1234 5678</p>
+                <p>📍 مسقط، سلطنة عمان</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-translate="footerRights">جميع الحقوق محفوظة © 2025 شركة أكنان</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/96812345678" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        💬
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
